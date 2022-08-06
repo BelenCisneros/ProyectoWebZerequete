@@ -11,11 +11,11 @@ nav{
     position: sticky;
     top: 0px;
     background-color: rgb(255, 166, 0);
-    height: 16vh;
+    height: 70px;
 
 }
 nav img {
-    width: 20%;
+    width: 10%;
 }
 nav ul{
     list-style: none;
@@ -29,7 +29,7 @@ ul a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2vw;
+    font-size: 1vw;
     position: sticky;
     bottom: 0px;
 }
@@ -39,12 +39,12 @@ ul a:hover{
 }
 
 .bienvenido{
-    background-image: url( "../img/baile.jpg");
+    background-image: url( "../img/fluorcumple.webp");
     background-size: cover;
     background-position: center center;
     width: 100vw;
     max-width: 100%;
-    height: calc(100vh - 100px) ;
+    height: calc(100vh - 70px) ;
     align-content: center;
     display: flex;
     align-items: center;
@@ -52,14 +52,15 @@ ul a:hover{
 }
 
 .bienvenido h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 8vw;
     color: rgb(255, 255, 255);
     animation-duration: 2s;
+    text-shadow: #ffb132 0em 0em 20px;
+    letter-spacing: 5px;
 }
     
 /*INDEX*/
-/* MAIN */
 #padreHome {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -69,7 +70,7 @@ ul a:hover{
                         "video parrafo";
     column-gap: 1.5rem;
     row-gap: 1.5rem;
-    height: 850px;
+    height: 690px;
     align-items: center;
     justify-items: center;
     background-color: rgb(255, 166, 0);
@@ -82,6 +83,7 @@ ul a:hover{
     grid-area: titulo;
     position: relative;
     bottom: 10px;
+    font-size: 80%;
 }
 
 #video{
@@ -95,22 +97,20 @@ ul a:hover{
     grid-area: img;
     width: 80%;
     min-width: min-content;
-    height: 80%;
+    height: 60%;
     position: relative;
     align-items: center;
 }
 
-#parrafoHome{
+.parrafoHome{
     grid-area: parrafo;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     width: 80%;    
     position: relative;
-    top: 15px;
+    top: 130px;
 
 }
-
-
 
 
 
@@ -123,7 +123,7 @@ footer{
     background-color: rgb(23, 5, 41);
     height: 80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 90%;
     text-align: center;
     color: rgb(255, 255, 255);
     align-items: center;
@@ -138,10 +138,10 @@ footer img{
 
 
 
-/*EQUIPO*/
+/* EQUIPO */
 
 #imgEquipo{
-            height: 120vh;
+            height: 90vh;
             display: flex;
             flex-direction: column;
             background-color: rgb(255, 255, 255);
@@ -154,23 +154,25 @@ footer img{
 
 }
 .imagenEquipo img {
-    width: 40vw;
+    width: 20vw;
+    padding-top:  5%;
 }
 .imagenEquipo :hover{
                         transform: rotateY(360deg);
                         transition: all 5s;
+
 }                    
 
 #imgEquipo p{
                 width: 50%;
                 position: relative;
-                top: 20%;
+                padding-top:  5%;
                 left: 25%;  
 }            
 
 /*COMBOS*/
 .combo{
-height: 1462px;
+height: 1400px;
 }
 div .promo {
     background-color: aqua;
@@ -187,33 +189,31 @@ div .promo {
 #padreCombo{
     background-color: rgb(58, 11, 102);
     display: grid;
-    height: 1150px;
-    width: 100vw;
+    height: 1100px;
+    width: 100%;
     max-width: 100%;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 10% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1% 33% 33%;
     grid-template-areas:"combo combo combo"
                         "combo1 combo2 combo3"
                         "combo4 combo5 combo6";
+                        grid-row-gap:10%;
     justify-items: center;
-    align-items: center;
-    justify-content:space-evenly;
-    column-gap: 3%;
-    row-gap: 3%;
 }
 
 .card{
-    align-content: center;
     background-color: orange;
     border-radius: 10px;
-    padding: 5%;
+    padding: 1%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8rem;    
+    height: fit-content;
+    
 }
 
 .card:hover{
-    font-size: 0.9rem;
-    transform: scale(1.03, 1.03);    
+    font-size: 0.8rem;
+    transform: scale(1.01, 1.01);    
 }
 
 .card button{
@@ -231,7 +231,7 @@ div .promo {
 #spaNenas{
     grid-area: combo1;
     width: 100%;
-
+    
 }
 
 #fiestaFluor{
@@ -312,17 +312,18 @@ h2{
     height: 130vh;
 }
 .imagenesGaleria{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 300px 300px;
-  column-gap: 2%;
-  row-gap: 5%;
-  justify-content: space-around;
-  align-content: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px 300px;
+    column-gap: 2%;
+    row-gap: 5%;
+    justify-content: space-around;
+    align-content: center;
+    padding:  0 150px 0 150px;
 }
 
 .imagenesGaleria img{
-    width: 100%;
+    width: fit-content;
     height: 100%;
     transition: all 1s;
 }
@@ -404,6 +405,11 @@ button{
     margin-bottom: 5px;
 }
 
+.botonContacto:hover{
+    background-color: #450552;
+    color: aliceblue;
+}
+
 @media only screen and (max-width:600px){
     .imagenesGaleria{
 
@@ -419,17 +425,20 @@ button{
         height: 180px;
     }
     nav img{
+        width: 30%;
         padding-top: 10px;
         padding-bottom: 20px;
     }
     
     ul{
-    
         flex-direction: column;    
         justify-content: space-around;
         align-items: center;
     }
-   
+    nav ul a{
+        font-size: 15px;
+    }
+
     #padreHome {
         display: grid;
         grid-template-columns: 100%;
@@ -439,16 +448,17 @@ button{
                         "img"
                         "parrafo";
         justify-content: center;
+        height: 800px;
     }
     .bienvenido{
         display: none;
     }
     #parrafoHome{
             text-align: center;
-            top: 0;
+    
     }
     #video{
-        width: 100%;
+        overflow:auto;
     }
     
     #imgEquipo{
