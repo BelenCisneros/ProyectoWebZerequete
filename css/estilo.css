@@ -412,10 +412,12 @@ button{
 
 @media only screen and (max-width:600px){
     .imagenesGaleria{
-
         grid-template-columns: 100%;
-        grid-template-rows: 30rem 30rem 30rem 30rem 30rem 30rem;
-        height: 600vh;
+        grid-template-rows: 10% 10% 10% 10% 10% 10%;
+        height: 280vh;
+        align-items: center;
+        justify-items: center;
+
     }
     nav{
         height: 30vh;
@@ -436,7 +438,7 @@ button{
         align-items: center;
     }
     nav ul a{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #padreHome {
@@ -453,31 +455,39 @@ button{
     .bienvenido{
         display: none;
     }
-    #parrafoHome{
-            text-align: center;
+    .parrafoHome{
+        text-align: center;
+        position: absolute;
+        padding-top: 500px;
+        }
+
     
-    }
     #video{
         overflow:auto;
     }
-    
     #imgEquipo{
-        height: 50rem;    
+        height: 37rem;    
     
+    }
+    #imgEquipo p {
+        font-size: 12px;
     }
 
     #padreCombo{
+        height: 3050px;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows:  0% 10% 10% 10% 10% 10% 10%;
-        grid-template-areas:"combo"
+        grid-template-rows:  10% 10% 10% 10% 10% 10%;
+        grid-template-areas:
                             "combo1"
                             "combo2"
                             "combo3"
                             "combo4"
                             "combo5"
                             "combo6";
-        row-gap: 3.8%;
-        height: 3000px;
+        grid-row-gap: 6%;
+        background-color: #450552;
     }
+
+
 }
